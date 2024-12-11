@@ -1,0 +1,56 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Noto Nastaliq Urdu';
+    src: url('./fonts/NotoNastaliqUrdu-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    margin: 0;
+    background: #fff;
+    user-select: none;
+    text-align: right;
+    padding: 10px 20px;
+    font-family: 'Noto Nastaliq Urdu', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    justify-content: flex-start;
+}
+.options {
+    overflow-x: auto;
+    display: inline-flex;
+    scrollbar-width: thin;
+    scrollbar-color: #999 #eee;
+}
+.options label {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: .8rem;
+    background: #999;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+.options label:hover {
+    color: #fff;
+    background: #4caf50;
+}
+.options input[type='radio'] {
+    display: none;
+    margin-right: 2px;
+}
+.options input[type='radio']:checked + label {
+    color: #fff;
+    background: #4caf50;
+}
+.hide {
+    display: none;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
