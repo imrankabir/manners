@@ -1,8 +1,8 @@
 const options = document.getElementsByName('option');
 const container = document.querySelector('.container');
 
-const get = (k, d) => JSON.parse(localStorage.getItem(`kids-${k}`)) ?? d;
-const set = (k, v) => localStorage.setItem(`kids-${k}`, JSON.stringify(v));
+const get = (k, d) => JSON.parse(localStorage.getItem(`manners-${k}`)) ?? d;
+const set = (k, v) => localStorage.setItem(`manners-${k}`, JSON.stringify(v));
 
 const changeOption = e => {
     const option = e.target.value;
