@@ -15,8 +15,8 @@ options.forEach(option => option.addEventListener('click', e => {
     markOptionSelected(option);
 }));
 
-(e => {
+document.addEventListener('DOMContentLoaded', e => {
     const { option } = get('option', {option: 1});
     markOptionSelected(option);
     document.querySelector(`#option-${option}`).setAttribute('checked', true);
-})();
+});
